@@ -8551,7 +8551,8 @@ window.DB10_MindMixing["간+태"] = {
     </h1>
 
     <p style="color: #555; font-size: 1.15rem; line-height: 1.9; word-break: keep-all; margin-bottom: 45px; font-weight: 400;">
-        Where the ancient wisdom of the 64 hexagrams meets modern psychology,<br>
+        Where the ancient wisdom of the 64 hexagrams<br>
+        meets modern psychology,<br>
         guiding you toward <strong style="color: #002D62; border-bottom: 2.5px solid #002D62; padding-bottom: 2px;">the Middle Way 中庸</strong> and inner peace.
     </p>
 
@@ -9104,7 +9105,7 @@ const findData = (db, a, b) => {
             ${sO.slice(0, 3).map(([name, pct]) => `
                 <div style="margin-bottom: 12px;">
                     <div style="display: flex; justify-content: space-between; font-size: 0.82rem; color: #444; margin-bottom: 5px; font-weight: 600;">
-                        <span>${name}</span>
+                        <span>${toHanja(name)}</span>
                         <span style="color: #002D62;">${pct.toFixed(1)}%</span>
                     </div>
                     <div style="background: #e0e0e0; height: 6px; border-radius: 10px; overflow: hidden;">
@@ -9119,7 +9120,7 @@ const findData = (db, a, b) => {
             ${sI.slice(0, 3).map(([name, pct]) => `
                 <div style="margin-bottom: 12px;">
                     <div style="display: flex; justify-content: space-between; font-size: 0.82rem; color: #444; margin-bottom: 5px; font-weight: 600;">
-                        <span>${name}</span>
+                        <span>${toHanja(name)}</span>
                         <span style="color: #3498DB;">${pct.toFixed(1)}%</span>
                     </div>
                     <div style="background: #e0e0e0; height: 6px; border-radius: 10px; overflow: hidden;">
